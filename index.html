@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To Do List</title>
+    <link rel="stylesheet" href="./main.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <p class="header-title">ToDo List</p>
+            <p class="header-title-tasks">Задачи на сегодня</p>
+        </div>
+        <div id="taskList" class="main">
+            
+            <div class="main-task">
+                <span class="main-task-title">купить молоко</span>
+                <div class="main-btns">
+                    <button type="button" data-action="done">
+                        <img src="./img/tick.svg" alt="done" width="18px" height="18">
+                    </button>
+                    <button type="button" data-action="delete">
+                        <img src="./img/cross.svg" alt="" width="18px" height="18">
+                    </button>
+                </div>
+
+            </div>
+            
+        </div>
+        <div class="form">
+            <form id="form-id" action="">
+                        <div class="form-input">                
+                            <p class="add-new-task-title">Добавить новую задачу</p>
+                            <input id="taskInput" class="input-field" type="text" placeholder="Текст задачи">
+                            <div class="form-btns">
+
+                                <button class="btn-send">Добавить</button>
+                                <button class="btn-clear">Очистить</button>
+                            </div>
+                    </div>
+            </form>
+                
+        
+        </div>
+    </div>
+
+    <script src="./main.js"></script>
+</body>
+</html>
